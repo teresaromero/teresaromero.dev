@@ -35,7 +35,7 @@ library.add(faTimes);
 const StyledTitle = styled.a`
   font-size: 1.8em;
   text-align: left;
-  color: palevioletred;
+  color: #F26389;
   font-family: "Baloo 2", cursive;
   min-width: fit-content;
 `;
@@ -43,7 +43,7 @@ const StyledTitle = styled.a`
 const StyledNavLink = styled.a`
   font-size: 1.3em;
   text-align: center;
-  color: palevioletred;
+  color: #F26389;
   font-family: "Baloo 2", cursive;
   padding: 0.2em 0;
   @media (min-width: 768px) {
@@ -74,13 +74,14 @@ const StyledMobileMenu = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  color: palevioletred;
+  color: #F26389;
   @media (min-width: 768px) {
     display: none;
   }
 `;
 
 const StyledNav = styled("div", { open: Boolean })`
+  background: #011826;
   padding: 1em;
   display: flex;
   flex-flow: row wrap;

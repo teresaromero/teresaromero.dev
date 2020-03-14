@@ -29,9 +29,8 @@ const locales = {
       contact: "Contacto"
     },
     hero: {
-      title: "",
-      subtitle: "",
-      callToAction: "Habla conmigo!"
+      title: "Hola!",
+      subtitle: "Soy desarrolladora full-stack y hago proyectos digitales.",
     },
     features: {
       title: "Servicios",

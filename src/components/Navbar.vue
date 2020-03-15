@@ -1,11 +1,6 @@
-<style>
-@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Bellota+Text:wght@300;400;700&display=swap");
-</style>
-
 <template>
-  <nav>
     <styled-nav>
-      <styled-title href="#">👩🏼‍💻Teresa Romero</styled-title>
+      <styled-title href="#">Teresa Romero</styled-title>
       <styled-mobile-menu>
         <font-awesome-icon
           @click="toggle"
@@ -21,7 +16,6 @@
         <styled-navLink href="#">{{ $t('navbar.contact') }}</styled-navLink>
       </styled-menu>
     </styled-nav>
-  </nav>
 </template>
 
 <script>
@@ -35,7 +29,7 @@ library.add(faTimes);
 const StyledTitle = styled.a`
   font-size: 1.8em;
   text-align: left;
-  color: #F26389;
+  color: #f26389;
   font-family: "Baloo 2", cursive;
   min-width: fit-content;
 `;
@@ -43,7 +37,7 @@ const StyledTitle = styled.a`
 const StyledNavLink = styled.a`
   font-size: 1.3em;
   text-align: center;
-  color: #F26389;
+  color: #f26389;
   font-family: "Baloo 2", cursive;
   padding: 0.2em 0;
   @media (min-width: 768px) {
@@ -74,15 +68,15 @@ const StyledMobileMenu = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  color: #F26389;
+  color: #f26389;
   @media (min-width: 768px) {
     display: none;
   }
 `;
 
-const StyledNav = styled("div", { open: Boolean })`
+const StyledNav = styled("nav", { open: Boolean })`
   background: #011826;
-  padding: 1em;
+  padding: 0.5em 1em;
   display: flex;
   flex-flow: row wrap;
   justify-content: justify-between;

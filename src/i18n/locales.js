@@ -6,8 +6,8 @@ const locales = {
       contact: "Contact"
     },
     hero: {
-      title: "",
-      subtitle: "",
+      title: "Hi! 👋🏻",
+      subtitle: "I'm a web developer!",
       callToAction: "Let's Talk!"
     },
     features: {
@@ -29,8 +29,8 @@ const locales = {
       contact: "Contacto"
     },
     hero: {
-      title: "Hola!",
-      subtitle: "Soy desarrolladora full-stack y hago proyectos digitales.",
+      title: "Hola! 👋🏻",
+      subtitle: "Soy desarrolladora web y proyectos digitales!",
     },
     features: {
       title: "Servicios",

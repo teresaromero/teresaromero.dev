@@ -1,42 +1,76 @@
 <template>
-  <!-- index.html -->
-
-  <section class="container mx-auto px-6 p-10">
-    <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">{{ $t('features.title') }}</h2>
-    <div class="flex items-center flex-wrap mb-20">
-      <div class="w-full md:w-1/2">
-        <h4 class="text-3xl text-gray-800 font-bold mb-3">Wordpress</h4>
-        <p
-          class="text-gray-600 mb-8"
-        >{{ $t('features.description.wordpress') }}</p>
-      </div>
-      <div class="w-full md:w-1/2">
-        <img src="assets/health.svg" alt="Monitoring" />
-      </div>
-    </div>
-
-    <div class="flex items-center flex-wrap mb-20">
-      <div class="w-full md:w-1/2">
-        <img src="assets/report.svg" alt="Reporting" />
-      </div>
-      <div class="w-full md:w-1/2 pl-10">
-        <h4 class="text-3xl text-gray-800 font-bold mb-3">React</h4>
-        <p
-          class="text-gray-600 mb-8"
-        > {{ $t('features.description.react') }}</p>
-      </div>
-    </div>
-
-    <div class="flex items-center flex-wrap mb-20">
-      <div class="w-full md:w-1/2">
-        <h4 class="text-3xl text-gray-800 font-bold mb-3">NodeJS</h4>
-        <p
-          class="text-gray-600 mb-8"
-        >{{ $t('features.description.node') }}</p>
-      </div>
-      <div class="w-full md:w-1/2">
-        <img src="assets/sync.svg" alt="Syncing" />
-      </div>
-    </div>
-  </section>
+  <styled-container>
+    <styled-h4>¿Qué tecnologias utilizo?</styled-h4>
+    <styled-wrapper>
+      <styled-element>
+        <icon-base icon-name="mdiNodejs" iconColor="#f26389" />
+      </styled-element>
+      <styled-element>
+        <icon-base icon-name="mdiReact" iconColor="#f26389" />
+      </styled-element>
+      <styled-element>
+        <icon-base icon-name="mdiVuejs" iconColor="#f26389" />
+      </styled-element>
+      <styled-element>
+        <icon-base icon-name="mdiWordpress" iconColor="#f26389" />
+      </styled-element>
+      <styled-element>
+        <icon-base icon-name="mdiAws" iconColor="#f26389" />
+      </styled-element>
+      <styled-element>
+        <icon-base icon-name="mdiGoogleCloud" iconColor="#f26389" />
+      </styled-element>
+      <styled-element>
+        <icon-base icon-name="mdiGithub" iconColor="#f26389" />
+      </styled-element>
+      <styled-element>
+        <icon-base icon-name="mdiSass" iconColor="#f26389" />
+      </styled-element>
+    </styled-wrapper>
+  </styled-container>
 </template>
+
+<script>
+import styled from "vue-styled-components";
+import Icon from "./Icon";
+
+// xs, extra-small: 0px
+// sm, small: 600px
+// md, medium: 960px
+// lg, large: 1280px
+// xl, extra-large: 1920px
+const Container = styled.section`
+  display: flex;
+  background: #f2f2f2;
+  flex-flow: column nowrap;
+`;
+
+const StyledH4 = styled.h4`
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bolder;
+`;
+
+const StyledWrapper = styled.section`
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+`;
+
+const StyledElement = styled.div`
+  padding: 0.5em;
+`;
+
+export default {
+  name: "Features",
+  components: {
+    "styled-wrapper": StyledWrapper,
+    "styled-element": StyledElement,
+    "icon-base": Icon,
+    "styled-container": Container,
+    "styled-h4": StyledH4
+  }
+};
+</script>

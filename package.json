@@ -16,12 +16,16 @@
     "@mdi/js": "^5.0.45",
     "@panter/vue-i18next": "^0.15.2",
     "axios": "^0.19.2",
+    "compression-webpack-plugin": "^3.1.0",
     "core-js": "^3.6.4",
     "i18next": "^19.3.2",
     "mdi-vue": "^1.4.5",
+    "node-sass": "^4.13.1",
+    "sass-loader": "^8.0.2",
     "tailwindcss": "^1.2.0",
     "vue": "^2.6.11",
-    "vue-styled-components": "^1.4.14"
+    "vue-styled-components": "^1.4.14",
+    "webpack-bundle-analyzer": "^3.6.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.2.0",

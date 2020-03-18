@@ -1,10 +1,13 @@
-import Vue from "vue";
-
-import VueI18Next from "@panter/vue-i18next";
-import i18next from "i18next";
-
+import Vue from "vue/dist/vue.runtime.esm.js";
 import App from "./App.vue";
-import "@/assets/css/tailwind.css";
+
+import VueI18Next from "@panter/vue-i18next/dist/vue-i18next.esm.js";
+import  i18next  from "i18next/dist/esm/i18next.js";
+
+// Icons custom
+import Icon from "./components/Icon";
+Vue.component("icon-base", Icon);
+
 import locales from "./i18n/locales";
 
 Vue.config.productionTip = false;
@@ -24,5 +27,5 @@ const i18n = new VueI18Next(i18next);
 new Vue({
   el: "#app",
   i18n,
-  render: (h) => h(App),
+  render: h => h(App)
 });

@@ -15,7 +15,16 @@
 </template>
 
 <script>
-import * as icon from "@mdi/js";
+import {
+  mdiNodejs,
+  mdiReact,
+  mdiVuejs,
+  mdiWordpress,
+  mdiAws,
+  mdiGoogleCloud,
+  mdiGithub,
+  mdiSass
+} from "@mdi/js/mdi.js";
 
 export default {
   props: {
@@ -25,11 +34,11 @@ export default {
     },
     width: {
       type: [Number, String],
-      default: "24"
+      default: "100%"
     },
     height: {
       type: [Number, String],
-      default: "24"
+      default: "100%"
     },
     iconColor: {
       type: String,
@@ -37,9 +46,26 @@ export default {
     }
   },
   data: function() {
-    return {
-      iconPath: icon[this.iconName]
-    };
+    switch (this.iconName) {
+      case "mdiNodejs":
+        return { iconPath: mdiNodejs };
+      case "mdiReact":
+        return { iconPath: mdiReact };
+      case "mdiWordpress":
+        return { iconPath: mdiWordpress };
+      case "mdiVuejs":
+        return { iconPath: mdiVuejs };
+      case "mdiAws":
+        return { iconPath: mdiAws };
+      case "mdiGoogleCloud":
+        return { iconPath: mdiGoogleCloud };
+      case "mdiGithub":
+        return { iconPath: mdiGithub };
+      case "mdiSass":
+        return { iconPath: mdiSass };
+      default:
+        break;
+    }
   }
 };
 </script>

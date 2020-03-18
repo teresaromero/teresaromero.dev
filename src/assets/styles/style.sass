@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Open+Sans&display=swap")
+
+$sm-max: 460px
+$md-max: 800px
+$lg-max: 1024px
+$sm-min: 320px
+$md-min: 768px
+$lg-min: 960px
+
+body,
+html
+  margin: 0
+  max-height: 100%
+  height: auto
+
+p, span, blockquote
+  font-family: "Open Sans", sans-serif
+  margin: .5em
+
+h1, h2, h3, h4, h5, h6
+  font-family: "Baloo 2", cursive
+  margin-bottom: 0
+
+h1
+  font-size: 2rem
+  font-weight: bolder
+
+h2
+  font-size: 1.5rem
+  font-weight: bolder
+
+h3
+  font-size: 1.17rem
+  font-weight: bolder
+  &.center
+    text-align: center
+
+h4
+  font-size: 1rem
+  font-weight: bolder
+
+h5
+  font-size: .83rem
+  font-weight: bolder
+
+h6
+  font-size: .67rem
+  font-weight: bolder
+
+footer
+  background-color: #011826
+  color: #f26389
+  a
+    font-size: .8rem
+  div
+    display: flex
+    flex-flow: row wrap
+    justify-content: space-between
+  .copyright, .legal
+    width: 100%
+  .copyright
+    justify-content: center
+  .legal
+    justify-content: space-around
+
+mark
+  background-color: #f26389
+  line-height: 2
+
+blockquote
+  padding: .3em .5em
+  border-left: 8px solid #f26389
+  font-weight: bold
+  margin: .5em
+
+a
+  text-decoration: none
+  font-family: "Open Sans", sans-serif
+
+img
+  width: 100%
+  height: auto
+  display: block
+  &.avatar
+    min-width: 200px
+    min-height: 200px
+    max-width: 200px
+    max-height: 200px
+  &.portfolio-img
+    padding: 1em 2em
+
+button
+  background-color: #f2f2f2
+  border: 2px #f26389 solid
+  border-radius: 8px
+  color: #f26389
+  font-family: "Baloo 2", cursive
+  font-size: 1.3em
+  font-weight: bold
+  padding: 12px 24px
+  text-decoration: none
+  max-width: 300px
+
+section
+  display: flex
+  flex-flow: column nowrap
+  padding: 0.5em
+  &.pink
+    background-image: url("./assets/pink.png")
+    background-repeat: repeat
+    background-position: center
+    background-size: contain
+    background-color: #f26389
+  &.blue
+    background-image: url("./assets/blue.png")
+    background-repeat: repeat
+    background-position: center
+    background-size: contain
+    background-color: #011826
+
+div
+  display: flex
+  &#app
+    flex-flow: column nowrap
+  &.left
+    justify-content: left
+    align-items: left
+  &.center
+    justify-content: center
+    align-items: center
+  &.hero
+    flex-flow: column nowrap
+    padding: .5em
+  &.value
+    flex-flow: column nowrap
+    padding: 2em
+    @media (min-width: $lg-max)
+      padding: 2em 20em
+  &.about
+    flex-flow: row nowrap
+    padding: 2em
+    @media (min-width: $sm-min) and (max-width: $md-max) and(orientation: portrait)
+      flex-flow: column nowrap
+      align-items: center
+      padding: 1em
+    @media (min-width: $lg-max)
+      padding: 2em 20em
+
+  &.description
+    flex-flow: column nowrap
+    padding: 2em
+    @media (min-width: $sm-min) and (max-width: $md-max) and(orientation: portrait)
+      text-align: center
+      padding: 1em
+    
+  
+  &.tech
+    flex-flow: column nowrap
+    justify-content: center
+    align-items: center
+    padding: 2em
+    @media (min-width: $lg-max)
+      padding: 2em 20em
+  &.image
+    justify-content: center
+    align-items: center
+    border-radius: 50%
+    overflow: hidden
+    min-width: 200px
+    min-height: 200px
+    max-width: 200px
+    max-height: 200px
+  &.icons
+    flex-flow: row wrap
+    align-items: center
+    justify-content: center
+  &.icon
+    padding: 0.2em
+    width: 4em
+  &.portfolio
+    flex-flow: column nowrap
+    justify-content: center
+    align-items: center
+  &.action
+    justify-content: center
+    align-items: center
+    padding: 3em

@@ -7,7 +7,7 @@ import i18next from "i18next/dist/esm/i18next.js";
 
 import App from "./App";
 
-import CookieLaw from 'vue-cookie-law/dist/vue-cookie-law.js'
+import CookieLaw from "vue-cookie-law/dist/vue-cookie-law.js";
 Vue.component("cookie-law", CookieLaw);
 
 // Icons custom
@@ -44,11 +44,14 @@ const router = new VueRouter({
       path: "/politica-de-privacidad",
       component: () => import("./components/PoliticaPrivacidad")
     },
-     {
+    {
       path: "/politica-de-cookies",
       component: () => import("./components/PoliticaCookies")
     }
-  ]
+  ],
+  scrollBehavior() {
+    return { x: 0, y: 0 };
+  }
 });
 
 new Vue({

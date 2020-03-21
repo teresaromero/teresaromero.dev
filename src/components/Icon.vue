@@ -4,10 +4,10 @@
     :width="width"
     :height="height"
     viewBox="0 0 24 24"
-    :aria-labelledby="iconName"
+    :aria-labelledby="ariaLabel"
     role="img"
   >
-    <title :id="iconName" lang="en">{{iconName}} icon</title>
+    <title :id="ariaLabel" lang="en">{{ariaLabel}}</title>
     <g>
       <path :fill="iconColor" :d="iconPath" />
     </g>
@@ -43,6 +43,9 @@ export default {
     iconColor: {
       type: String,
       default: "currentColor"
+    },
+    ariaLabel: {
+      type: String
     }
   },
   data: function() {

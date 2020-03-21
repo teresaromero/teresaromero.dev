@@ -22,8 +22,8 @@ Vue.use(VueRouter);
 Vue.use(Plugin);
 
 i18next.init({
-  lng: "es",
-  fallbackLng: "es",
+  lng: navigator.language,
+  fallbackLng: "en",
   resources: {
     en: { translation: locales.en },
     es: { translation: locales.es }
@@ -53,6 +53,7 @@ const router = new VueRouter({
     return { x: 0, y: 0 };
   }
 });
+
 
 new Vue({
   router,

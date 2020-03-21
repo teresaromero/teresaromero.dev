@@ -147,7 +147,7 @@ export default {
     return {
       titular: "Teresa Romero Lozano",
       NIF: "17756982Q",
-      email: "tromerolozano@gmail.com",
+      email: "hola@teresaromero.dev",
       domicilio: "Madrid",
       web: "https://teresaromero.dev",
       proveedor: "PROVEEDOR"

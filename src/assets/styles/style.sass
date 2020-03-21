@@ -14,7 +14,7 @@ html
   height: auto
   overflow-x: hidden
 
-body 
+body
   min-height: 100vh
   scroll-behavior: smooth
   text-rendering: optimizeSpeed
@@ -23,6 +23,12 @@ body
 p, span, blockquote
   font-family: "Open Sans", sans-serif
   margin: .5em
+
+ul
+  font-family: "Open Sans", sans-serif
+  list-style-type: none
+  li
+    padding: .25em 0
 
 h1, h2, h3, h4, h5, h6
   font-family: "Baloo 2", cursive
@@ -47,6 +53,7 @@ h3
 h4
   font-size: 1rem
   font-weight: bolder
+  color: #011826
 
 h5
   font-size: .83rem
@@ -111,12 +118,25 @@ button
   border: 2px #f26389 solid
   border-radius: 8px
   color: #f26389
-  font-family: "Baloo 2", cursive
-  font-size: 1.3em
-  font-weight: bold
-  padding: 12px 24px
-  text-decoration: none
-  max-width: 300px
+  &.call
+    font-family: "Baloo 2", cursive
+    font-size: 1.3em
+    font-weight: bold
+    padding: 12px 24px
+    text-decoration: none
+    max-width: 300px
+
+.Cookie--mytheme
+  background-color: #f26389
+  font-family: "Open Sans", sans-serif
+  padding: .5em 1em
+  .Cookie__button
+    padding: 10px 20px
+    font-weight: bold
+    background-color: #8CFFC0
+  .Cookie__declineButton
+    padding: 10px 20px
+    font-weight: bold
 
 section
   display: flex
@@ -126,16 +146,18 @@ section
     background-image: url("./assets/pink.png")
     background-repeat: repeat
     background-position: center
-    background-size: contain
+    background-size: cover
     background-color: #f26389
     border-top: 2px solid #f26389
   &.blue
     background-image: url("./assets/blue.png")
     background-repeat: repeat
     background-position: center
-    background-size: contain
+    background-size: cover
     background-color: #011826
     border-bottom: 2px solid #011826
+  &.legal
+    padding: 3em
 
 div
   display: flex
@@ -178,7 +200,7 @@ div
     @media (min-width: $sm-min) and (max-width: $md-max) and(orientation: portrait)
       text-align: center
       padding: 1em
-    
+
   &.tech
     flex-flow: column nowrap
     justify-content: center

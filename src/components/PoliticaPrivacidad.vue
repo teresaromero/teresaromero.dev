@@ -1,24 +1,26 @@
 <template>
   <fragment>
     <section class="blue">
-      <router-link to="/">Volver</router-link>
+      <div class="hero left">
+        <h2>
+          <mark>Politica de Privacidad</mark>
+        </h2>
+      </div>
     </section>
     <section class="legal">
-      <h2>Política de Privacidad</h2>
       <p>{{titular}} te informa sobre su Política de Privacidad respecto del tratamiento y protección de los datos de carácter personal de los usuarios y clientes que puedan ser recabados por la navegación o contratación de servicios a través del sitio Web DIRECCIÓN-WEB.</p>
       <p>En este sentido, el Titular garantiza el cumplimiento de la normativa vigente en materia de protección de datos personales, reflejada en la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y de Garantía de Derechos Digitales (LOPD GDD). Cumple también con el Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo de 27 de abril de 2016 relativo a la protección de las personas físicas (RGPD).</p>El uso de sitio Web implica la aceptación de esta Política de Privacidad así como las condiciones incluidas en el Aviso Legal.
-      <h4>Identidad del responsable</h4>
+      <h3>Identidad del responsable</h3>
 
       <ul>
         <li>Titular: {{ titular }}</li>
-        <li>Registro mercantil: {{registroMercantil}}</li>
         <li>NIF: {{NIF}}</li>
         <li>Domicilio: {{domicilio}}</li>
         <li>Correo electrónico: {{email}}</li>
         <li>Sitio Web: {{web}}</li>
       </ul>
 
-      <h4>Principios aplicados en el tratamiento de datos</h4>
+      <h3>Principios aplicados en el tratamiento de datos</h3>
       <p>En el tratamiento de tus datos personales, el Titular aplicará los siguientes principios que se ajustan a las exigencias del nuevo reglamento europeo de protección de datos:</p>
 
       <ul>
@@ -29,7 +31,7 @@
         <li>Principio de integridad y confidencialidad: Tus datos serán tratados de tal manera que su seguridad, confidencialidad e integridad esté garantizada. Debes saber que el Titular toma las precauciones necesarias para evitar el acceso no autorizado o uso indebido de los datos de sus usuarios por parte de terceros.</li>
       </ul>
 
-      <h4>Obtención de datos personales</h4>
+      <h3>Obtención de datos personales</h3>
       <p>Para navegar por {{web}} no es necesario que facilites ningún dato personal. Los casos en los que sí proporcionas tus datos personales son los siguientes:</p>ELIMINA LOS QUE NO USES:
       <ul>
         <li>Al contactar a través de los formularios de contacto o enviar un correo electrónico.</li>
@@ -138,3 +140,18 @@
     </section>
   </fragment>
 </template>
+
+<script>
+export default {
+  data: () => {
+    return {
+      titular: "Teresa Romero Lozano",
+      NIF: "17756982Q",
+      email: "tromerolozano@gmail.com",
+      domicilio: "Madrid",
+      web: "https://teresaromero.dev",
+      proveedor: "PROVEEDOR"
+    };
+  }
+};
+</script>

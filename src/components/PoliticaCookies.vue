@@ -1,10 +1,13 @@
 <template>
   <fragment>
     <section class="blue">
-      <router-link to="/">Volver</router-link>
+       <div class="hero left">
+        <h2>
+          <mark>Politica de Cookies</mark>
+        </h2>
+      </div>
     </section>
     <section class="legal">
-      <h2>Politica de Cookies</h2>
 
       <p>En cumplimiento con lo dispuesto en el artículo 22.2 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico, esta página web le informa, en esta sección, sobre la política de recogida y tratamiento de cookies.</p>
 

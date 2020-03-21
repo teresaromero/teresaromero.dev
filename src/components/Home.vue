@@ -78,14 +78,13 @@
             <h3 class="center">Centro de estética Rufas</h3>
 
             <img
-              class="portfolio-img"
               src="../assets/rufas.png"
               alt="centro de estetica y peluquería rufas"
             />
           </div>
           <div class="portfolio">
             <h3 class="center">Dr. Romero Cardiel</h3>
-            <img class="portfolio-img" src="../assets/romerocardiel.png" alt="dr. romero" />
+            <img src="../assets/romerocardiel.png" alt="dr. romero" />
           </div>
         </div>
       </div>

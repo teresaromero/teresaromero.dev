@@ -20,7 +20,7 @@
 
       <div class="about">
         <div class="image">
-          <img class="avatar" src="../assets/teresa_romero.webp" alt="teresa romero" />
+          <img class="avatar" src="../assets/teresa_romero.png" alt="teresa romero" />
         </div>
         <div class="description">
           <p>Soy Teresa Romero, desarrolladora web y puedo ayudarte desde el planteamiento del diseño del producto digitial hasta su puesta en produción.</p>
@@ -71,7 +71,7 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="../assets/asociacionvictoria.webp" alt="asociacion victoria" />
+              <img src="../assets/asociacionvictoria.png" alt="asociacion victoria" />
             </a>
           </div>
           <div class="portfolio">
@@ -79,13 +79,13 @@
 
             <img
               class="portfolio-img"
-              src="../assets/rufas.webp"
+              src="../assets/rufas.png"
               alt="centro de estetica y peluquería rufas"
             />
           </div>
           <div class="portfolio">
             <h3 class="center">Dr. Romero Cardiel</h3>
-            <img class="portfolio-img" src="../assets/romerocardiel.webp" alt="dr. romero" />
+            <img class="portfolio-img" src="../assets/romerocardiel.png" alt="dr. romero" />
           </div>
         </div>
       </div>

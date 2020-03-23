@@ -8,7 +8,12 @@
     <div class="container">
       <router-view></router-view>
       <footer>
-        <cookie-law buttonText="Aceptar 🍪" buttonDecline buttonDeclineText="Ignorar" theme="mytheme">
+        <cookie-law
+          buttonText="Aceptar 🍪"
+          buttonDecline
+          buttonDeclineText="Ignorar"
+          theme="mytheme"
+        >
           <div slot="message">
             <p>
               Esta web utiliza cookies 🍪 🥠, puedes ver aqui la
@@ -20,12 +25,12 @@
 
         <div>
           <div class="copyright">
-            <router-link to="/">© 2020 - Teresa Romero</router-link>
+            <router-link to="/" title="Programadora Web" >© 2020 - Teresa Romero</router-link>
           </div>
           <div class="legal">
-            <router-link to="/aviso-legal">👩🏼‍💼 Aviso Legal</router-link>
-            <router-link to="/politica-de-privacidad"> 🔏 Politica de Privacidad</router-link>
-            <router-link to="/politica-de-cookies">🍪 Politica de Cookies</router-link>
+            <router-link to="/aviso-legal" title="Aviso Legal">👩🏼‍💼 Aviso Legal</router-link>
+            <router-link to="/politica-de-privacidad" title="Política de Privacidad">🔏 Politica de Privacidad</router-link>
+            <router-link to="/politica-de-cookies" title="Política de Cookies">🍪 Politica de Cookies</router-link>
           </div>
         </div>
       </footer>

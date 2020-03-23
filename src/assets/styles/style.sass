@@ -7,6 +7,9 @@ $sm-min: 320px
 $md-min: 768px
 $lg-min: 960px
 
+$body: "Open Sans", sans-serif
+$header: "Baloo 2", sans-serif
+
 body,
 html
   margin: 0
@@ -21,59 +24,92 @@ body
   background-color: #011826
 
 p, span, blockquote
-  font-family: "Open Sans", sans-serif
+  font-family: $body
   margin: .5em
+p
+  &.title
+    font-size: 2em
+    font-family: $header
+    font-weight: bold
+  &.center
+    text-align: center
+  &.pink
+    border: 3px solid #f26389
+    color: #f26389
+    padding: .5em 1em
 
 ul
-  font-family: "Open Sans", sans-serif
+  font-family: $body
   list-style-type: none
   li
     padding: .25em 0
 
 h1, h2, h3, h4, h5, h6
-  font-family: "Baloo 2", cursive
+  font-family: $header
   margin-bottom: 0
-  &.pink
-    border: 3px solid #f26389
-    color:#f26389
-    padding: .5em 1em
 
 h1
-  font-size: 3rem
+  font-size: 3em
   font-weight: bolder
   color: #011826
 
 h2
-  font-size: 2rem
+  font-size: 2em
   font-weight: bolder
   color: #011826
+  &.blockquote
+    font-size: 1.2em
+    font-weight: bolder
+    padding: .3em .5em
+    border-left: 8px solid #f26389
+    margin: .5em
+  &.h2icon
+    font-size: 1.5em
+    margin: 0
+    text-align: center
   &.center
     text-align: center
+  &.text
+    font-family: $body
+    font-size: 1em
+    font-weight: normal
+    margin: .5em
+  &.title2
+    font-size: 1.5em
 
 h3
-  font-size: 1.5rem
+  font-size: 1.5em
   font-weight: bolder
   color: #011826
   &.center
     text-align: center
 
 h4
-  font-size: 1rem
+  font-size: 1em
   font-weight: bolder
   color: #011826
 
 h5
-  font-size: .83rem
+  font-size: .83em
   font-weight: bolder
 
 h6
-  font-size: .67rem
+  font-size: .67em
   font-weight: bolder
+
+.social
+  font-family: $header
+  color: #f26389
+  font-weight: bold
+  font-size: 1.5em
+  text-decoration: none
+  a:hover
+    font-weight: 900
 
 footer
   background-color: #f26389
   color: #f2f2f2
-  font-size: .8rem
+  font-size: .8em
   a
     font-family: "Open Sans", sans-serif
     color: #011826
@@ -101,19 +137,11 @@ mark
   background-color: #f26389
   line-height: 2
 
-blockquote
-  padding: .3em .5em
-  border-left: 8px solid #f26389
-  font-weight: bold
-  margin: .5em
-
-.img-anchor:hover
-  background-color: red
-
 img
   width: 100%
   height: auto
   display: block
+  max-width: 80vw
   &.avatar
     min-width: 200px
     min-height: 200px
@@ -232,8 +260,11 @@ div
     align-items: center
     justify-content: center
   &.icon
-    padding: 0.2em
-    width: 4em
+    flex-flow: column nowrap
+    align-items: center
+    justify-content: center
+    padding: 1em
+    width: 5em
   &.portfolio
     flex-flow: column nowrap
     justify-content: center

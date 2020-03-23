@@ -10,10 +10,10 @@
     </section>
     <section>
       <div class="value">
-        <h2 class="blockquote">Necesito una página web</h2>
-        <h2 class="blockquote">Tengo en mente un negocio digital y no se cómo empezar</h2>
-        <h2 class="blockquote">Mi web es un desastre y necesito ayuda</h2>
-        <h2 class="blockquote">Tengo una web pero nadie la encuentra</h2>
+        <h2 class="blockquote">"Necesito una página web"</h2>
+        <h2 class="blockquote">"Tengo en mente un negocio digital y no se cómo empezar"</h2>
+        <h2 class="blockquote">"Mi web es un desastre y necesito ayuda"</h2>
+        <h2 class="blockquote">"Tengo una web pero nadie la encuentra"</h2>
       </div>
 
       <div class="about">
@@ -80,7 +80,7 @@
             <h2 class="title2 center">Asociación Victoria</h2>
             <a
               class="img-anchor"
-              href="http://asociacionvictoria.es"
+              href="https://asociacionvictoria.es"
               target="_blank"
               rel="noopener noreferrer"
               title="Asociación de mujeres en contra de la violencia de género Victoria"
@@ -94,20 +94,35 @@
           </div>
           <div class="portfolio">
             <h2 class="title2 center">Salón de Peluquería y Estética Rufas</h2>
-
-            <img
-              src="../assets/rufas.png"
-              alt="Centro Neotécnico de Estética y Peluquería Rugas"
-              title="Centro Neotécnico de Estética y Peluquería Rugas"
-            />
+            <a
+              class="img-anchor"
+              href="https://rufas.es"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Centro Neotécnico de Estética y Peluquería Rufas"
+            >
+              <img
+                src="../assets/rufas.png"
+                alt="Centro Neotécnico de Estética y Peluquería Rufas"
+                title="Centro Neotécnico de Estética y Peluquería Rufas"
+              />
+            </a>
           </div>
           <div class="portfolio">
             <h2 class="title2 center">Dr. Romero Cardiel</h2>
+            <a
+              class="img-anchor"
+              href="https://romerocardiel.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Consulta del Dr. Romero Cardiel, Ginecólogo y Obstetra"
+            >
             <img
               src="../assets/romerocardiel.png"
               alt="Consulta del Dr. Romero Cardiel, Ginecólogo y Obstetra"
               title="Consulta del Dr. Romero Cardiel, Ginecólogo y Obstetra"
             />
+            </a>
           </div>
         </div>
       </div>
@@ -133,13 +148,8 @@
       </p>
 
       <p class="title pink">Pide presupuesto sin compromiso</p>
-      <span class="emoji">👇🏼</span>
     </div>
 
-    <section class="pink">
-      <div class="action">
-        <button class="call">Quiero un presupuesto</button>
-      </div>
-    </section>
+    <section class="pink"></section>
   </fragment>
 </template>

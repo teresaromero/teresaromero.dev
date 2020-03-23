@@ -91,7 +91,7 @@ export default {
       domicilio: "Madrid",
       web: "https://teresaromero.dev",
       provincia: "Madrid",
-      finalidad: "La finalidad de este sitio web es la ..."
+      finalidad: "La finalidad de este sitio web es la venta de servicios de desarrollo de páginas web y aplicaciones, optimizaciones de SEO y mantenimiento de las mismas."
     };
   }
 };

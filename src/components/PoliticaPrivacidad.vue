@@ -150,7 +150,7 @@ export default {
       email: "hola@teresaromero.dev",
       domicilio: "Madrid",
       web: "https://teresaromero.dev",
-      proveedor: "PROVEEDOR"
+      proveedor: "Google Firebase Hosting"
     };
   }
 };

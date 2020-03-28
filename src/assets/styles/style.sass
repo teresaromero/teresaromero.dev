@@ -164,16 +164,20 @@ button
     max-width: 300px
 
 .Cookie--mytheme
-  background-color: #f26389
+  background-color: #242122bb
   font-family: "Open Sans", sans-serif
   padding: .5em 1em
-  color: #011826
+  color: white
+  a
+    color: red
   .Cookie__button
-    padding: 10px 20px
+    padding: 1em
     font-weight: bold
     background-color: #8CFFC0
+    margin: 1em
   .Cookie__declineButton
-    padding: 10px 20px
+    padding: 1em
+    margin: 1em
     font-weight: bold
 
 section
@@ -319,11 +323,41 @@ input:focus, textarea:focus
   outline: none
 .disclaimer
   font: $body
-  font-size: .55rem
+  font-size: .7rem
   display: flex
   flex-flow: column nowrap
   text-align: justify
   span
     font-weight: bold
     margin: 0
+
+.sendButton
+  font-family: $header
+  font-weight: bolder
+  font-size: 1.3rem
+  color: #f26389
+  background-color: #F2F2F2
+  border: 2px solid #f26389
+  &:disabled
+    background-color: #F2F2F2
+    color:#f263897e
+    border: 2px solid #f263897e
+    pointer-events: none
+  &:hover
+    background-color: #f26389
+    color: #F2F2F2
+    cursor: pointer
   
+span
+  &.error
+    font-family: $body
+    font-size: .8rem
+    font-weight: bold
+    color: red
+    text-align: center
+  &.success
+    font-family: $body
+    font-size: .8rem
+    font-weight: bold
+    color: green
+    text-align: center

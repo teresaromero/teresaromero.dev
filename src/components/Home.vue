@@ -90,7 +90,7 @@
               class="img-anchor"
               href="https://asociacionvictoria.es"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener noreferrer nofollow"
               title="Asociación de mujeres en contra de la violencia de género Victoria"
             >
               <img
@@ -106,7 +106,7 @@
               class="img-anchor"
               href="https://rufas.es"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener noreferrer nofollow"
               title="Centro Neotécnico de Estética y Peluquería Rufas"
             >
               <img
@@ -122,7 +122,7 @@
               class="img-anchor"
               href="https://romerocardiel.com"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener noreferrer nofollow"
               title="Consulta del Dr. Romero Cardiel, Ginecólogo y Obstetra"
             >
               <img
@@ -143,14 +143,14 @@
           class="social"
           href="https://www.linkedin.com/in/teresaromerolozano/"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noopener noreferrer nofollow"
           title="Perfil de Teresa Romero en Linkedin"
         >LinkedIn</a> y
         <a
           class="social"
           href="https://www.malt.es/profile/teresaromerolozano"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noopener noreferrer nofollow"
           title="Perfil de Teresa Romero en Malt"
         >Malt</a>
       </p>

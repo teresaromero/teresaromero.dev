@@ -11,7 +11,6 @@ exports.contact = functions
     return cors(req, res, async () => {
       try {
         if (req.method !== "POST") throw new Error("Not Allowed");
-
         const { name, to, message } = req.body;
         if (!name || !to || !message)
           throw new Error("Todos los campos son obligatorios");

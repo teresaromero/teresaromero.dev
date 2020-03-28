@@ -3,7 +3,8 @@ import VueRouter from "vue-router/dist/vue-router.esm.js";
 import VueMeta from "vue-meta/dist/vue-meta.esm.js";
 import { Plugin } from "vue-fragment";
 import VueGtag from "vue-gtag";
-import { VueReCaptcha } from 'vue-recaptcha-v3'
+import { VueReCaptcha } from "vue-recaptcha-v3";
+import Spinner from "vue-simple-spinner/dist/vue-simple-spinner.min.js";
 
 import App from "./App";
 
@@ -14,12 +15,13 @@ Vue.component("cookie-law", CookieLaw);
 import Icon from "./components/Icon";
 Vue.component("icon-base", Icon);
 
+Vue.component("spinner", Spinner);
+
 Vue.config.productionTip = false;
 Vue.use(VueRouter);
 Vue.use(Plugin);
 Vue.use(VueMeta);
-Vue.use(VueReCaptcha, { siteKey: process.env.VUE_APP_SITEKEY })
-
+Vue.use(VueReCaptcha, { siteKey: process.env.VUE_APP_SITEKEY });
 
 const router = new VueRouter({
   mode: "history",
@@ -33,12 +35,12 @@ const router = new VueRouter({
           {
             name: "description",
             content:
-              "Diseñador web, programador web freelance Madrid y para toda España. Soy experto en creación de páginas web y tiendas online. Posicionamiento web SEO y más"
+              "Desarrolladora web freelance en Madrid y para toda España. Ayudo a pequeños negocios a poder desarrollar sus proyectos digitales. Wordpress, React, Vue, Posicionamiento web SEO y más."
           },
           {
             property: "og:description",
             content:
-              "Diseñador web, programador web freelance Madrid y para toda España. Soy experto en creación de páginas web y tiendas online. Posicionamiento web SEO y más"
+              "Desarrolladora web freelance en Madrid y para toda España. Ayudo a pequeños negocios a poder desarrollar sus proyectos digitales. Wordpress, React, Vue, Posicionamiento web SEO y más."
           }
         ]
       }
@@ -48,19 +50,7 @@ const router = new VueRouter({
       component: () => import("./components/AvisoLegal"),
       meta: {
         title:
-          "Programadora web freelance. Desarrollo de páginas web, tiendas online y apps",
-        metaTags: [
-          {
-            name: "description",
-            content:
-              "Diseñador web, programador web freelance Madrid y para toda España. Soy experto en creación de páginas web y tiendas online. Posicionamiento web SEO y más"
-          },
-          {
-            property: "og:description",
-            content:
-              "Diseñador web, programador web freelance Madrid y para toda España. Soy experto en creación de páginas web y tiendas online. Posicionamiento web SEO y más"
-          }
-        ]
+          "Aviso Legal - Programadora web freelance. Desarrollo de páginas web, tiendas online y apps"
       }
     },
     {
@@ -68,19 +58,7 @@ const router = new VueRouter({
       component: () => import("./components/PoliticaPrivacidad"),
       meta: {
         title:
-          "Programadora freelance en Madrid y Zaragoza. Desarrollo de páginas web y apps",
-        metaTags: [
-          {
-            name: "description",
-            content:
-              "Diseñador web, programador web freelance Madrid y para toda España. Soy experto en creación de páginas web y tiendas online. Posicionamiento web SEO y más"
-          },
-          {
-            property: "og:description",
-            content:
-              "Diseñador web, programador web freelance Madrid y para toda España. Soy experto en creación de páginas web y tiendas online. Posicionamiento web SEO y más"
-          }
-        ]
+          "Política de Privacidad - Programadora freelance en Madrid y Zaragoza. Desarrollo de páginas web y apps"
       }
     },
     {
@@ -88,19 +66,7 @@ const router = new VueRouter({
       component: () => import("./components/PoliticaCookies"),
       meta: {
         title:
-          "Programadora freelance en Madrid y Zaragoza. Desarrollo de páginas web y apps",
-        metaTags: [
-          {
-            name: "description",
-            content:
-              "Diseñador web, programador web freelance Madrid y para toda España. Soy experto en creación de páginas web y tiendas online. Posicionamiento web SEO y más"
-          },
-          {
-            property: "og:description",
-            content:
-              "Diseñador web, programador web freelance Madrid y para toda España. Soy experto en creación de páginas web y tiendas online. Posicionamiento web SEO y más"
-          }
-        ]
+          "Política de Cookies - Programadora freelance en Madrid y Zaragoza. Desarrollo de páginas web y apps"
       }
     }
   ],
@@ -172,6 +138,5 @@ Vue.use(
 
 new Vue({
   router,
-  render: h => h(App),
-
+  render: h => h(App)
 }).$mount("#app");

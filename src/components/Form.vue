@@ -55,8 +55,19 @@
         </label>
       </div>
       <div class="formElement">
-        <input class="submitButton" type="submit" value="Enviar" :disabled="!this.terms" />
+        <input
+          v-if="!loading && !success"
+          class="sendButton"
+          :class="{loading: loading === true, error: error}"
+          type="submit"
+          :value="this.buttonText"
+          :disabled="this.disabled"
+        />
+        <spinner line-bg-color="#F2F2F2" line-fg-color="#f26389" v-if="loading"></spinner>
       </div>
+      <span class="error" v-if="error">{{this.errorMessage}}</span>
+      <span class="success" v-if="success">👏🏻👏🏻👏🏻Nos ha llegado tu correo! 👏🏻👏🏻👏🏻</span>
+
       <div class="disclaimer">
         <p>
           Al rellenar el formulario estás dando el
@@ -71,11 +82,7 @@
         </p>
         <p>
           El
-          <span>destinatario</span> de tus datos (herramienta que uso) es Firebase de Google Inc. al amparo del acuerdo EU-US Privacy Shield. - Información disponible
-          <a
-            tarjet="_blank"
-            href="https://www.privacyshield.gov/participant?id=a2zt000000001L5AAI&status=Active"
-          >aquí</a>. y podrás ejercer tus
+          <span>destinatario</span> de tus datos (herramienta que uso) es Google Gmail y podrás ejercer tus
           <span>derechos de acceso, rectificación, limitación o supresión de tus datos</span>.(Ver
           <router-link
             to="/politica-de-privacidad"
@@ -106,16 +113,23 @@ export default {
         text: "",
         maxlength: 255
       },
-      submitted: false,
-      error: ""
+      loading: false,
+      success: false,
+      error: false,
+      errorMessage: "",
+      disabled: true,
+      buttonText: "Enviar"
     };
   },
   methods: {
     acceptTerms() {
       this.terms = !this.terms;
+      this.disabled = !this.terms;
     },
     async sendEmail() {
       try {
+        this.disabled = true;
+        this.loading = true;
         await this.$recaptchaLoaded();
 
         const token = await this.$recaptcha("contact");
@@ -136,15 +150,17 @@ export default {
           terms
         } = this;
 
-        const emailResponse = await axios.post(
+        await axios.post(
           `${process.env.VUE_APP_API_URL}/teresaromero-dev/europe-west1/contact`,
           { to, message: text, name, terms }
         );
-        console.log(emailResponse);
-        return emailResponse;
+        this.loading = false;
+        this.success = true;
       } catch (err) {
-        console.log("Error:", err.message);
-        this.error = err.message;
+        this.loading = false;
+        this.disabled = false;
+        this.error = true;
+        this.errorMessage = err.message;
       }
     }
   }

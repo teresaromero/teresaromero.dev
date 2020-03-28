@@ -16,11 +16,8 @@
           v-on:accept="enablePlugin()"
         >
           <div slot="message">
-            <p>
-              Esta web utiliza cookies 🍪 🥠, puedes ver aqui la
-              <router-link to="/politica-de-cookies">🔗 politica de cookies</router-link>y la
-              <router-link to="/politica-de-privacidad">🔗 politica de privacidad</router-link>
-            </p>
+            <p>Esta página web usa cookies 🍪 🥠</p>
+            <p>Las cookies de este sitio web se usan para personalizar el contenido y los anuncios, ofrecer funciones de redes sociales y analizar el tráfico. Además, compartimos información sobre el uso que haga del sitio web con nuestros partners de redes sociales, publicidad y análisis web, quienes pueden combinarla con otra información que les haya proporcionado o que hayan recopilado a partir del uso que haya hecho de sus servicios. <router-link to="/politica-de-privacidad">Más información</router-link></p>
           </div>
         </cookie-law>
 

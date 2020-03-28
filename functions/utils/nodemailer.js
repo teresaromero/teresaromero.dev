@@ -18,6 +18,7 @@ exports.sendMail = async (to, name, message) => {
   try {
     console.log("Sending Email...");
     const response = await transporter.sendMail({
+      from: '👩🏼‍💻Teresa Romero <hola@teresaromero.dev>',
       to,
       subject: "🧾Solicitud de presupuesto en teresaromero.dev",
       html: template({

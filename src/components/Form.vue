@@ -134,7 +134,7 @@ export default {
 
         const token = await this.$recaptcha("contact");
 
-        const url = `${process.env.VUE_APP_API_URL}/teresaromero-dev/europe-west1/sendRecaptcha?token=${token}`;
+        const url = `${process.env.VUE_APP_RECAPTCHA_API}?token=${token}`;
 
         // get recaptcha score
         const { data } = await axios.get(url);
@@ -151,7 +151,7 @@ export default {
         } = this;
 
         await axios.post(
-          `${process.env.VUE_APP_API_URL}/teresaromero-dev/europe-west1/contact`,
+          `${process.env.VUE_APP_CONTACT_API}`,
           { to, message: text, name, terms }
         );
         this.loading = false;

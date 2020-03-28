@@ -32,7 +32,7 @@
       </ul>
 
       <h3>Obtención de datos personales</h3>
-      <p>Para navegar por {{web}} no es necesario que facilites ningún dato personal. Los casos en los que sí proporcionas tus datos personales son los siguientes:</p>ELIMINA LOS QUE NO USES:
+      <p>Para navegar por {{web}} no es necesario que facilites ningún dato personal. Los casos en los que sí proporcionas tus datos personales son los siguientes:</p>
       <ul>
         <li>Al contactar a través de los formularios de contacto o enviar un correo electrónico.</li>
       </ul>
@@ -73,7 +73,6 @@
 
       <ul>
         <li>Linkedin</li>
-        <li>Instagram</li>
       </ul>
 
       <p>El Titular tratará tus datos personales con la finalidad de administrar correctamente su presencia en la red social, informarte de sus actividades, productos o servicios, así como para cualquier otra finalidad que las normativas de las redes sociales permitan.</p>
@@ -111,11 +110,6 @@
           Google Analytics es un servicio de analítica web prestado por Google, Inc., una compañía de Delaware cuya oficina principal está en 1600 Amphitheatre Parkway, Mountain View (California), CA 94043, Estados Unidos (“Google”). Encontrarás más información en: https://analytics.google.com
           Google Analytics utiliza “cookies”, que son archivos de texto ubicados en tu ordenador, para ayudar al Titular a analizar el uso que hacen los usuarios del sitio Web. La información que genera la cookie acerca del uso del sitio Web (incluyendo tu dirección IP) será directamente transmitida y archivada por Google en los servidores de Estados Unidos.
         </li>
-        <li>
-          DoubleClick by Google es un conjunto de servicios publicitarios proporcionado por Google, Inc., una compañía de Delaware cuya oficina principal está en 1600 Amphitheatre Parkway, Mountain View (California), CA 94043, Estados Unidos (“Google”).
-          Encontrarás más información en: https://www.doubleclickbygoogle.com
-          DoubleClick utiliza “cookies”, que son archivos de texto ubicados en tu ordenador y que sirven para aumentar la relevancia de los anuncios relacionados con tus búsquedas recientes. En la Política de privacidad de Google se explica cómo Google gestiona tu privacidad en lo que respecta al uso de las cookies y otra información.
-        </li>
       </ul>
       <p>También puedes ver una lista de los tipos de cookies que utiliza Google y sus colaboradores y toda la información relativa al uso que hacen de cookies publicitarias.</p>
       <h3>Navegación Web</h3>
@@ -123,7 +117,6 @@
       <p>El sitio Web utiliza los siguientes servicios de análisis de terceros:</p>
       <ul>
         <li>Google Analytics</li>
-        <li>DoubleClick por Google</li>
       </ul>
       <p>El Titular utiliza la información obtenida para obtener datos estadísticos, analizar tendencias, administrar el sitio, estudiar patrones de navegación y para recopilar información demográfica.</p>
       <h3>Exactitud y veracidad de los datos personales</h3>
@@ -150,7 +143,7 @@ export default {
       email: "hola@teresaromero.dev",
       domicilio: "Madrid",
       web: "https://teresaromero.dev",
-      proveedor: "Google Firebase Hosting"
+      proveedor: "Google Firebase"
     };
   }
 };

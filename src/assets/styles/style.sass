@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Open+Sans&display=swap")
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700;800&display=swap")
 
 $sm-max: 460px
 $md-max: 800px
@@ -277,3 +277,53 @@ div
 
 .emoji
   font-size: 3em
+
+form
+  background-color: #f2f2f2b2
+  margin: 0 auto
+  width: 100%
+  min-width: 250px
+  max-width: 400px
+  a
+    color: #f26389
+    font-weight: bold
+    padding: .3em
+    text-decoration: none
+
+fieldset
+  display: flex
+  flex-flow: column nowrap
+  justify-content: center
+  border: none
+
+.formElement
+  display: flex
+  flex-flow: column nowrap
+  padding: .5em 0
+.formElement-v
+  display: flex
+  flex-flow: row nowrap
+  justify-content: center
+  align-items: center
+  padding: .5em 0
+label
+  font-family: $header
+  font-size: 1rem
+input, textarea
+  font-family: $body
+  border: none
+  padding: .5em
+  font-size: .8rem
+  border-radius: 10px
+input:focus, textarea:focus
+  outline: none
+.disclaimer
+  font: $body
+  font-size: .55rem
+  display: flex
+  flex-flow: column nowrap
+  text-align: justify
+  span
+    font-weight: bold
+    margin: 0
+  

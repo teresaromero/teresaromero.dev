@@ -13,6 +13,7 @@
           buttonDecline
           buttonDeclineText="Ignorar"
           theme="mytheme"
+          v-on:accept="enablePlugin()"
         >
           <div slot="message">
             <p>
@@ -25,15 +26,38 @@
 
         <div>
           <div class="copyright">
-            <router-link to="/" title="Programadora Web" >© 2020 - Teresa Romero</router-link>
+            <router-link to="/" title="Programadora Web">© 2020 - Teresa Romero</router-link>
           </div>
           <div class="legal">
             <router-link to="/aviso-legal" title="Aviso Legal">👩🏼‍💼 Aviso Legal</router-link>
-            <router-link to="/politica-de-privacidad" title="Política de Privacidad">🔏 Politica de Privacidad</router-link>
-            <router-link to="/politica-de-cookies" title="Política de Cookies">🍪 Politica de Cookies</router-link>
+            <router-link
+              to="/politica-de-privacidad"
+              title="Política de Privacidad"
+            >🔏 Politica de Privacidad</router-link>
+            <router-link
+              to="/politica-de-cookies"
+              title="Política de Cookies"
+            >🍪 Politica de Cookies</router-link>
           </div>
         </div>
       </footer>
     </div>
   </div>
 </template>
+
+<script>
+import { bootstrap } from "vue-gtag";
+
+export default {
+  methods: {
+    enablePlugin() {
+      bootstrap().then(() => {
+        this.$gtag.event("cookie_consent_accept", {
+          event_label: "Cookie Consent Banner",
+          event_category: "cookie_consent"
+        });
+      });
+    },
+  }
+};
+</script>

@@ -1,11 +1,16 @@
 .DS_Store
 node_modules
 /dist
+/functions
+.firebase/
+
 vue.config.js
 
 # local env files
 .env.local
 .env.*.local
+.env.production
+
 .firebaserc
 
 # Log files

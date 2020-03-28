@@ -10,10 +10,18 @@
     </section>
     <section>
       <div class="value">
-        <h2 class="blockquote">"Necesito una página web"</h2>
-        <h2 class="blockquote">"Tengo en mente un negocio digital y no se cómo empezar"</h2>
-        <h2 class="blockquote">"Mi web es un desastre y necesito ayuda"</h2>
-        <h2 class="blockquote">"Tengo una web pero nadie la encuentra"</h2>
+        <h2 class="blockquote">
+          <i>Necesito una página web</i>
+        </h2>
+        <h2 class="blockquote">
+          <i>Tengo en mente un negocio digital y no se cómo empezar</i>
+        </h2>
+        <h2 class="blockquote">
+          <i>Mi web es un desastre y necesito ayuda</i>
+        </h2>
+        <h2 class="blockquote">
+          <i>Tengo una web pero nadie la encuentra</i>
+        </h2>
       </div>
 
       <div class="about">
@@ -26,7 +34,7 @@
           />
         </div>
         <div class="description">
-          <p>Soy Teresa Romero, desarrolladora web y puedo ayudarte desde el planteamiento del diseño del producto digitial hasta su puesta en produción.</p>
+          <p>Soy Teresa Romero, desarrolladora web. Puedo ayudarte desde el planteamiento del diseño del producto digital hasta su puesta en produción y posterior mantenimiento.</p>
           <h2
             class="text"
           >Desarrollo todo tipo de proyectos digitales para particulares y pequeños negocios.</h2>
@@ -117,11 +125,11 @@
               rel="noopener noreferrer"
               title="Consulta del Dr. Romero Cardiel, Ginecólogo y Obstetra"
             >
-            <img
-              src="../assets/romerocardiel.png"
-              alt="Consulta del Dr. Romero Cardiel, Ginecólogo y Obstetra"
-              title="Consulta del Dr. Romero Cardiel, Ginecólogo y Obstetra"
-            />
+              <img
+                src="../assets/romerocardiel.png"
+                alt="Consulta del Dr. Romero Cardiel, Ginecólogo y Obstetra"
+                title="Consulta del Dr. Romero Cardiel, Ginecólogo y Obstetra"
+              />
             </a>
           </div>
         </div>
@@ -150,6 +158,18 @@
       <p class="title pink">Pide presupuesto sin compromiso</p>
     </div>
 
-    <section class="pink"></section>
+    <section class="pink">
+      <FormC></FormC>
+    </section>
   </fragment>
 </template>
+
+<script>
+import FormC from "./Form";
+
+export default {
+  components: {
+    FormC
+  }
+};
+</script>

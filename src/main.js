@@ -2,6 +2,8 @@ import Vue from "vue/dist/vue.runtime.esm.js";
 import VueRouter from "vue-router/dist/vue-router.esm.js";
 import VueMeta from "vue-meta/dist/vue-meta.esm.js";
 import { Plugin } from "vue-fragment";
+import VueGtag from "vue-gtag";
+import { VueReCaptcha } from 'vue-recaptcha-v3'
 
 import App from "./App";
 
@@ -16,7 +18,7 @@ Vue.config.productionTip = false;
 Vue.use(VueRouter);
 Vue.use(Plugin);
 Vue.use(VueMeta);
-
+Vue.use(VueReCaptcha, { siteKey: process.env.VUE_APP_SITEKEY })
 
 
 const router = new VueRouter({
@@ -26,8 +28,7 @@ const router = new VueRouter({
       path: "/",
       component: () => import("./components/Home"),
       meta: {
-        title:
-          "Programadora web freelance. Desarrollo de páginas web y apps",
+        title: "Programadora web freelance. Desarrollo de páginas web y apps",
         metaTags: [
           {
             name: "description",
@@ -158,8 +159,19 @@ router.beforeEach((to, from, next) => {
   next();
 });
 
+Vue.use(
+  VueGtag,
+  {
+    config: { id: "G-ZGYSTR06VH" },
+    enabled: false,
+    appName: "teresaromero",
+    pageTrackerScreenviewEnabled: true
+  },
+  router
+);
 
 new Vue({
   router,
-  render: h => h(App)
+  render: h => h(App),
+
 }).$mount("#app");

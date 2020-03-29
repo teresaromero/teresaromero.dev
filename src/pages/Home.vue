@@ -11,7 +11,7 @@
     <section>
       <div class="value">
         <h2 class="blockquote">
-          <i>Necesito una página web</i>
+          <i>Necesito una página web o una tienda online</i>
         </h2>
         <h2 class="blockquote">
           <i>Tengo en mente un negocio digital y no se cómo empezar</i>
@@ -173,7 +173,8 @@ const meta = {
   description:
     "Desarrolladora web freelance en Madrid y para toda España. Ayudo a pequeños negocios a poder desarrollar sus proyectos digitales. Wordpress, React, Vue, Posicionamiento web SEO y más.",
   siteTitle: "Teresa Romero - Desarrolladora",
-  url: "https://teresaromero.dev"
+  url: "https://teresaromero.dev",
+  image: "../assets/blue.png"
 };
 
 export default {
@@ -197,7 +198,7 @@ export default {
       },
       {
         property: "og:image",
-        content: "https://www.my-site.com/my-special-image.jpg"
+        content: meta.image
       },
       { property: "og:description", content: meta.description },
 
@@ -216,7 +217,7 @@ export default {
       { name: "twitter:creator", content: "@teresaromerodev" },
       {
         name: "twitter:image:src",
-        content: "https://www.my-site.com/my-special-image.jpg"
+        content: meta.image
       },
 
       // Google / Schema.org markup:
@@ -224,7 +225,7 @@ export default {
       { itemprop: "description", content: meta.description },
       {
         itemprop: "image",
-        content: "https://www.my-site.com/my-special-image.jpg"
+        content: meta.image
       }
     ]
   }

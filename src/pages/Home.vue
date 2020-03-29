@@ -20,7 +20,7 @@
           <i>Mi web es un desastre y necesito ayuda</i>
         </h2>
         <h2 class="blockquote">
-          <i>Tengo una web pero nadie la encuentra</i>
+          <i>Tengo una web pero nadie la encuentra y necesito que alguien la mantenga</i>
         </h2>
       </div>
 
@@ -167,67 +167,9 @@
 <script>
 import FormC from "../components/Form";
 
-const meta = {
-  title:
-    "Desarrollo web y aplicaciones freelance en Madrid y resto de España. React, Vue, Wordpress, Firebase.",
-  description:
-    "Desarrolladora web freelance en Madrid y para toda España. Ayudo a pequeños negocios a poder desarrollar sus proyectos digitales. Wordpress, React, Vue, Posicionamiento web SEO y más.",
-  siteTitle: "Teresa Romero - Desarrolladora",
-  url: "https://teresaromero.dev",
-  image: "../assets/blue.png"
-};
-
 export default {
   components: {
     FormC
-  },
-  metaInfo: {
-    title: meta.title,
-    link: [{ rel: "canonical", href: meta.url }],
-    meta: [
-      { "http-equiv": "Content-Type", content: "text/html; charset=utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { name: "description", content: meta.description },
-      // OpenGraph data (Most widely used)
-      { property: "og:title", content: meta.title },
-      { property: "og:site_name", content: meta.siteTitle },
-      { property: "og:type", content: "website" },
-      {
-        property: "og:url",
-        content: meta.url
-      },
-      {
-        property: "og:image",
-        content: meta.image
-      },
-      { property: "og:description", content: meta.description },
-
-      // Twitter card
-      { name: "twitter:card", content: "summary" },
-      {
-        name: "twitter:site",
-        content: meta.url
-      },
-      { name: "twitter:title", content: meta.title },
-      {
-        name: "twitter:description",
-        content: meta.description
-      },
-      // Your twitter handle, if you have one.
-      { name: "twitter:creator", content: "@teresaromerodev" },
-      {
-        name: "twitter:image:src",
-        content: meta.image
-      },
-
-      // Google / Schema.org markup:
-      { itemprop: "name", content: meta.title },
-      { itemprop: "description", content: meta.description },
-      {
-        itemprop: "image",
-        content: meta.image
-      }
-    ]
   }
 };
 </script>

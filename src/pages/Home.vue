@@ -167,9 +167,66 @@
 <script>
 import FormC from "../components/Form";
 
+const meta = {
+  title:
+    "Desarrollo web y aplicaciones freelance en Madrid y resto de España. React, Vue, Wordpress, Firebase.",
+  description:
+    "Desarrolladora web freelance en Madrid y para toda España. Ayudo a pequeños negocios a poder desarrollar sus proyectos digitales. Wordpress, React, Vue, Posicionamiento web SEO y más.",
+  siteTitle: "Teresa Romero - Desarrolladora",
+  url: "https://teresaromero.dev"
+};
+
 export default {
   components: {
     FormC
+  },
+  metaInfo: {
+    title: meta.title,
+    link: [{ rel: "canonical", href: meta.url }],
+    meta: [
+      { "http-equiv": "Content-Type", content: "text/html; charset=utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { name: "description", content: meta.description },
+      // OpenGraph data (Most widely used)
+      { property: "og:title", content: meta.title },
+      { property: "og:site_name", content: meta.siteTitle },
+      { property: "og:type", content: "website" },
+      {
+        property: "og:url",
+        content: meta.url
+      },
+      {
+        property: "og:image",
+        content: "https://www.my-site.com/my-special-image.jpg"
+      },
+      { property: "og:description", content: meta.description },
+
+      // Twitter card
+      { name: "twitter:card", content: "summary" },
+      {
+        name: "twitter:site",
+        content: meta.url
+      },
+      { name: "twitter:title", content: meta.title },
+      {
+        name: "twitter:description",
+        content: meta.description
+      },
+      // Your twitter handle, if you have one.
+      { name: "twitter:creator", content: "@teresaromerodev" },
+      {
+        name: "twitter:image:src",
+        content: "https://www.my-site.com/my-special-image.jpg"
+      },
+
+      // Google / Schema.org markup:
+      { itemprop: "name", content: meta.title },
+      { itemprop: "description", content: meta.description },
+      {
+        itemprop: "image",
+        content: "https://www.my-site.com/my-special-image.jpg"
+      }
+    ]
   }
 };
 </script>

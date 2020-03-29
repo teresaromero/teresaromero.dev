@@ -1,11 +1,5 @@
 <template>
-  <cookie-law
-    buttonText="Aceptar 🍪"
-    buttonDecline
-    buttonDeclineText="Ignorar"
-    theme="mytheme"
-    v-on:accept="enablePlugin()"
-  >
+  <cookie-law buttonText="Aceptar 🍪" buttonDecline buttonDeclineText="Ignorar" theme="mytheme">
     <div slot="message">
       <p>Esta página web usa cookies 🍪 🥠</p>
       <p>
@@ -16,19 +10,3 @@
   </cookie-law>
 </template>
 
-<script>
-import { bootstrap } from "vue-gtag";
-
-export default {
-  methods: {
-    enablePlugin() {
-      bootstrap().then(() => {
-        this.$gtag.event("cookie_consent_accept", {
-          event_label: "Cookie Consent Banner",
-          event_category: "cookie_consent"
-        });
-      });
-    }
-  }
-};
-</script>

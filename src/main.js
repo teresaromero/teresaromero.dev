@@ -1,10 +1,10 @@
 import Vue from "vue/dist/vue.runtime.esm.js";
 import VueMeta from "vue-meta/dist/vue-meta.esm.js";
-import { Plugin } from "vue-fragment";
-import { VueReCaptcha } from "vue-recaptcha-v3";
+import { Plugin } from "vue-fragment/dist/vue-fragment.esm.js";
+import { VueReCaptcha } from "vue-recaptcha-v3/dist/ReCaptchaVuePlugin.js";
 import Spinner from "vue-simple-spinner/dist/vue-simple-spinner.min.js";
-import * as firebase from "firebase/app";
-import 'firebase/analytics'
+import firebase from "@firebase/app/dist/index.cjs.js";
+import 'firebase/analytics/dist/index.esm.js'
 
 import router from "./router";
 import App from "./App";
@@ -19,6 +19,7 @@ firebase.initializeApp({
   appId: "1:746845711031:web:faf67b6626c75a620c3b32",
   measurementId: "G-9FC6YH9PQ8"
 });
+firebase.analytics();
 
 Vue.prototype.$analytics = firebase.analytics();
 

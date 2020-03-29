@@ -165,7 +165,7 @@
 </template>
 
 <script>
-import FormC from "./Form";
+import FormC from "../components/Form";
 
 export default {
   components: {

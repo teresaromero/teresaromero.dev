@@ -28,47 +28,21 @@ const router = new VueRouter({
   routes: [
     {
       path: "/",
-      component: () => import("./components/Home"),
-      meta: {
-        title: "Programadora web freelance. Desarrollo de páginas web y apps",
-        metaTags: [
-          {
-            name: "description",
-            content:
-              "Desarrolladora web freelance en Madrid y para toda España. Ayudo a pequeños negocios a poder desarrollar sus proyectos digitales. Wordpress, React, Vue, Posicionamiento web SEO y más."
-          },
-          {
-            property: "og:description",
-            content:
-              "Desarrolladora web freelance en Madrid y para toda España. Ayudo a pequeños negocios a poder desarrollar sus proyectos digitales. Wordpress, React, Vue, Posicionamiento web SEO y más."
-          }
-        ]
-      }
+      component: () => import("./pages/Home"),
     },
     {
       path: "/aviso-legal",
-      component: () => import("./components/AvisoLegal"),
-      meta: {
-        title:
-          "Aviso Legal - Programadora web freelance. Desarrollo de páginas web, tiendas online y apps"
-      }
+      component: () => import("./pages/AvisoLegal"),
     },
     {
       path: "/politica-de-privacidad",
-      component: () => import("./components/PoliticaPrivacidad"),
-      meta: {
-        title:
-          "Política de Privacidad - Programadora freelance en Madrid y Zaragoza. Desarrollo de páginas web y apps"
-      }
+      component: () => import("./pages/PoliticaPrivacidad"),
     },
     {
       path: "/politica-de-cookies",
-      component: () => import("./components/PoliticaCookies"),
-      meta: {
-        title:
-          "Política de Cookies - Programadora freelance en Madrid y Zaragoza. Desarrollo de páginas web y apps"
-      }
-    }
+      component: () => import("./pages/PoliticaCookies"),
+    },
+    { path: "*", component: ()=> import('./pages/NotFound') }
   ],
   scrollBehavior() {
     return { x: 0, y: 0 };

@@ -9,7 +9,7 @@
           id="name"
           required
           v-model="name.value"
-          placeholder="June Osborne"
+          placeholder="Daenerys Targaryen"
           :class="{ name , error: !name.valid }"
         />
       </div>
@@ -19,7 +19,7 @@
           type="email"
           name="email"
           id="email"
-          placeholder="june_osborne@hbo.com"
+          placeholder="dany@ironthrone.com"
           required
           :class="{ email , error: !email.valid }"
           v-model="email.value"

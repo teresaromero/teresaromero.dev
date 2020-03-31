@@ -4,7 +4,7 @@ import { Plugin } from "vue-fragment/dist/vue-fragment.esm.js";
 import { VueReCaptcha } from "vue-recaptcha-v3/dist/ReCaptchaVuePlugin.js";
 import Spinner from "vue-simple-spinner/dist/vue-simple-spinner.min.js";
 import firebase from "@firebase/app/dist/index.cjs.js";
-import 'firebase/analytics/dist/index.esm.js'
+import "firebase/analytics/dist/index.esm.js";
 
 import router from "./router";
 import App from "./App";
@@ -34,7 +34,7 @@ Vue.component("spinner", Spinner);
 
 Vue.config.productionTip = false;
 Vue.use(Plugin);
-Vue.use(VueMeta);
+Vue.use(VueMeta, { refreshOnceOnNavigation: true });
 Vue.use(VueReCaptcha, { siteKey: process.env.VUE_APP_SITEKEY });
 
 new Vue({

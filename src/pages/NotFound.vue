@@ -24,7 +24,7 @@
   <fragment>
     <section class="container404">
       <div class="div404">
-        <img src="../assets/404.png" alt="Página No Encontrada" title="Página No Encontrada" />
+        <img src="https://teresaromeroassets.s3.eu-west-3.amazonaws.com/404.png" alt="Página No Encontrada" title="Página No Encontrada" />
         <p class="text">No hemos encontrado lo que estabas buscando... igual el contenido ya no existe o simplemente la ruta no esta correctamente escrita.</p>
          <router-link
               to="/"

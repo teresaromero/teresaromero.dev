@@ -28,7 +28,7 @@
         <div class="image">
           <img
             class="avatar"
-            src="../assets/teresa_romero.png"
+            src="https://teresaromeroassets.s3.eu-west-3.amazonaws.com/teresa_romero.png"
             alt="Foto de Teresa Romero"
             title="Teresa Romero"
           />
@@ -94,7 +94,7 @@
               title="Asociación de mujeres en contra de la violencia de género Victoria"
             >
               <img
-                src="../assets/asociacionvictoria.png"
+                src="https://teresaromeroassets.s3.eu-west-3.amazonaws.com/asociacionvictoria.png"
                 alt="Asociación Victoria"
                 title="Asociación Victoria"
               />
@@ -110,7 +110,7 @@
               title="Centro Neotécnico de Estética y Peluquería Rufas"
             >
               <img
-                src="../assets/rufas.png"
+                src="https://teresaromeroassets.s3.eu-west-3.amazonaws.com/rufas.png"
                 alt="Centro Neotécnico de Estética y Peluquería Rufas"
                 title="Centro Neotécnico de Estética y Peluquería Rufas"
               />
@@ -126,7 +126,7 @@
               title="Consulta del Dr. Romero Cardiel, Ginecólogo y Obstetra"
             >
               <img
-                src="../assets/romerocardiel.png"
+                src="https://teresaromeroassets.s3.eu-west-3.amazonaws.com/romerocardiel.png"
                 alt="Consulta del Dr. Romero Cardiel, Ginecólogo y Obstetra"
                 title="Consulta del Dr. Romero Cardiel, Ginecólogo y Obstetra"
               />
@@ -170,6 +170,79 @@ import FormC from "../components/Form";
 export default {
   components: {
     FormC
+  },
+  metaInfo: {
+    title: "Desarrollo web, tiendas online y aplicaciones",
+    titleTemplate: "%s - Inicio",
+    meta: [
+      {
+        name: "description",
+        content:
+          "Desarrolladora freelance en Madrid y para toda España. Ayudo a pequeños negocios a poder desarrollar sus proyectos digitales.Posicionamiento web SEO y mantenimiento."
+      },
+      {
+        name: "author",
+        content: "Teresa Romero Lozano"
+      },
+      // OpenGraph data (Most widely used)
+      {
+        property: "og:title",
+        content: "Desarrollo web, tiendas online y aplicaciones"
+      },
+      {
+        property: "og:site_name",
+        content: "Teresa Romero, desarrolladora web"
+      },
+      { property: "og:type", content: "website" },
+      {
+        property: "og:url",
+        content: "https://teresaromero.dev"
+      },
+      {
+        property: "og:image",
+        content:
+          "https://teresaromeroassets.s3.eu-west-3.amazonaws.com/blue.png"
+      },
+      {
+        property: "og:description",
+        content:
+          "Desarrolladora freelance en Madrid y para toda España. Ayudo a pequeños negocios a poder desarrollar sus proyectos digitales.Posicionamiento web SEO y mantenimiento."
+      },
+
+      // Twitter card
+      { property: "twitter:card", content: "summary_large_image" },
+      {
+        property: "twitter:url",
+        content: "https://teresaromero.dev"
+      },
+      {
+        property: "twitter:title",
+        content: "Desarrollo web, tiendas online y aplicaciones"
+      },
+      {
+        property: "twitter:description",
+        content:
+          "Desarrolladora freelance en Madrid y para toda España. Ayudo a pequeños negocios a poder desarrollar sus proyectos digitales.Posicionamiento web SEO y mantenimiento."
+      },
+      // Your twitter handle, if you have one.
+      { property: "twitter:creator", content: "@teresaromerodev" },
+      {
+        property: "twitter:image",
+        content:
+          "https://teresaromeroassets.s3.eu-west-3.amazonaws.com/blue.png"
+      },
+
+      // Google / Schema.org markup:
+      {
+        itemprop: "name",
+        content: "Desarrollo web, tiendas online y aplicaciones"
+      },
+      {
+        itemprop: "description",
+        content:
+          "Desarrolladora freelance en Madrid y para toda España. Ayudo a pequeños negocios a poder desarrollar sus proyectos digitales.Posicionamiento web SEO y mantenimiento."
+      }
+    ]
   }
 };
 </script>
